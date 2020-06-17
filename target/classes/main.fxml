@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import com.jfoenix.controls.JFXButton?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0"
+      prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="liusheng.danmu.controller.MainController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="600.0">
+         <children>
+            <JFXButton   onAction="#playList" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="播放列表">
+               <HBox.margin>
+                  <Insets right="70.0" />
+               </HBox.margin>
+
+            </JFXButton>
+            <JFXButton onAction="#searchList" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="搜索列表">
+               <HBox.margin>
+                  <Insets right="70.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton onAction="#setting" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="设置" />
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" fx:id="mainBox">
+
+      </VBox>
+   </children>
+</VBox>

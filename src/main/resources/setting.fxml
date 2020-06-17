@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+      fx:controller="liusheng.danmu.controller.SettingController"
+      xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="600.0">
+         <children>
+
+            <Label prefHeight="30.0" prefWidth="100.0" text="直播间链接">
+               <HBox.margin>
+                  <Insets right="50.0" left="50" />
+               </HBox.margin>
+            </Label>
+            <JFXTextField prefHeight="30.0" prefWidth="400.0" fx:id="urlText"/>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="600.0">
+         <HBox.margin>
+            <Insets left="50"/>
+         </HBox.margin>
+         <children>
+            <Label prefHeight="30.0" prefWidth="100.0" text="音乐类型">
+               <HBox.margin>
+                  <Insets right="50.0" left="50"/>
+               </HBox.margin>
+            </Label>
+            <JFXComboBox prefHeight="30.0" prefWidth="100.0" fx:id="musicTypeSelect"/>
+         </children>
+      </HBox>
+   </children>
+</VBox>
